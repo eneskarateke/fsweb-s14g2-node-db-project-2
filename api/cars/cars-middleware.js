@@ -40,7 +40,7 @@ const checkCarPayload = (req, res, next) => {
         missingField = "mileage";
       }
 
-      res.status(400).json({ message: `${missingField} is missing.` });
+      res.status(400).json({ message: `${missingField} is missing` });
     } else {
       next();
     }
